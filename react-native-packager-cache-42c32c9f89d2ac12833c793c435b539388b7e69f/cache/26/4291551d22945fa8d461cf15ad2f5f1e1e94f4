@@ -1,0 +1,133 @@
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = undefined;
+var _jsxFileName = '/Users/baldur/Documents/REACT_NATIVE_TUTORIALS/rn3/FacebookReact/App.js';
+
+var _react = require('react');
+
+var _react2 = babelHelpers.interopRequireDefault(_react);
+
+var _reactNative = require('react-native');
+
+var _reactNativeSegmentedControlTab = require('react-native-segmented-control-tab');
+
+var _reactNativeSegmentedControlTab2 = babelHelpers.interopRequireDefault(_reactNativeSegmentedControlTab);
+
+var App = function (_Component) {
+  babelHelpers.inherits(App, _Component);
+
+  function App() {
+    babelHelpers.classCallCheck(this, App);
+
+    var _this = babelHelpers.possibleConstructorReturn(this, (App.__proto__ || Object.getPrototypeOf(App)).call(this));
+
+    _this.handleIndexChange = function (index) {
+      _this.setState(babelHelpers.extends({}, _this.state, {
+        selectedIndex: index
+      }));
+    };
+
+    _this.state = {
+      selectedIndex: 0
+    };
+    return _this;
+  }
+
+  babelHelpers.createClass(App, [{
+    key: 'render',
+    value: function render() {
+      return _react2.default.createElement(
+        _reactNative.View,
+        {
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 23
+          }
+        },
+        _react2.default.createElement(
+          _reactNative.Text,
+          {
+            __source: {
+              fileName: _jsxFileName,
+              lineNumber: 24
+            }
+          },
+          'Hei'
+        ),
+        _react2.default.createElement(
+          _reactNative.Text,
+          {
+            __source: {
+              fileName: _jsxFileName,
+              lineNumber: 25
+            }
+          },
+          this.state.selectedIndex
+        ),
+        _react2.default.createElement(
+          _reactNative.Text,
+          {
+            __source: {
+              fileName: _jsxFileName,
+              lineNumber: 26
+            }
+          },
+          'Hei'
+        ),
+        _react2.default.createElement(
+          _reactNative.Text,
+          {
+            __source: {
+              fileName: _jsxFileName,
+              lineNumber: 27
+            }
+          },
+          'Hei'
+        ),
+        _react2.default.createElement(
+          _reactNative.Text,
+          {
+            __source: {
+              fileName: _jsxFileName,
+              lineNumber: 28
+            }
+          },
+          'Hei'
+        ),
+        _react2.default.createElement(
+          _reactNative.Text,
+          {
+            __source: {
+              fileName: _jsxFileName,
+              lineNumber: 29
+            }
+          },
+          'Hei'
+        ),
+        _react2.default.createElement(
+          _reactNative.Text,
+          {
+            __source: {
+              fileName: _jsxFileName,
+              lineNumber: 30
+            }
+          },
+          'Hei'
+        ),
+        _react2.default.createElement(_reactNativeSegmentedControlTab2.default, {
+          values: ['First', 'Second', 'Third'],
+          selectedIndex: this.state.selectedIndex,
+          onTabPress: this.handleIndexChange,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 32
+          }
+        })
+      );
+    }
+  }]);
+  return App;
+}(_react.Component);
+
+exports.default = App;
